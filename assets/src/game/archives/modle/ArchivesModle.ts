@@ -36,7 +36,7 @@ export default class ArchivesModle {
      * 根据序号获取读档数据
      */
     public getPreserBySerial(serial:number){
-        let infoOnce:ArchivesType;
+        let infoOnce:ArchivesType = new ArchivesType();
         let infoArr = ArchivesServer.instance.getPreserArr();
         for(let i = 0; i < infoArr.length; ++i)
         {
